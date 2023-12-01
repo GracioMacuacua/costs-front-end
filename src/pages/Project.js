@@ -19,7 +19,7 @@ function Project() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`http://localhost:3001/projects/${id}`, {
+      fetch(`https://costs-api-wdgk.onrender.com/projects/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ function Project() {
       return;
     }
 
-    fetch(`http://localhost:3001/projects/${id}`, {
+    fetch(`https://costs-api-wdgk.onrender.com/projects/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ function Project() {
       return;
     }
 
-    fetch(`http://localhost:3001/services/`, {
+    fetch(`https://costs-api-wdgk.onrender.com/services/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -110,7 +110,7 @@ function Project() {
   function removeService(id) {
     setMessage("");
 
-    fetch(`http://localhost:3001/services/${id}`, {
+    fetch(`https://costs-api-wdgk.onrender.com/services/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

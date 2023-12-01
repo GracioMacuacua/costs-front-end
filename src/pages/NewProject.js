@@ -8,7 +8,7 @@ function NewProject() {
   function createPost(project) {
     project.cost = 0;
 
-    fetch("http://localhost:3001/projects", {
+    fetch("https://costs-api-wdgk.onrender.com/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
